@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">appMascotas</string>
+
+    <string name="lblNombreMascota">Nombre mascota: </string>
+    <string name="lblEdad">Edad: </string>
+    <string name="lblVacunas">Vacunas: </string>
+    <string name="lblRaza">Raza: </string>
+    <string name="lblEspecie">Especie: </string>
+    <string name="lblPeso">Peso: </string>
+    <string name="lblTipoComida">Tipo de comida: </string>
+
+
+    <string name="lblNombreDueño">Nombre dueño: </string>
+    <string name="lblCorreo">Correo: </string>
+    <string name="lblContraseña">Contraseña: </string>
+    <string name="lblTipoDocumento">Tipo de documento: </string>
+    <string name="lblIdentificacion">Identificacion: </string>
+    <string name="lblWhatsapp">Whatsapp: </string>
+    <string name="lblDireccion">Direccion: </string>
+    <string name="lblCiudad">Ciudad: </string>
+
+    <string name="btnEnviar">Enviar</string>
+    <string name="btnRegistrar">Registrar</string>
+    <string name="btnEliminar">Eliminar cuenta</string>
+    <string name="btnBuscar">Buscar</string>
+    <string name="btnActualizar">Actualizar</string>
+    <string name="btnScanear">Scanear</string>
+    <string name="btnEntrar">Entrar</string>
+    <string name="btnSesion">Cerrar sesion</string>
+
+    <string-array name="spinnerTipoDocumento">
+        <item>Seleccionar tipo de docuemnto</item>
+        <item>Cedula de ciudadania</item>
+        <item>Cedula de extrangeria</item>
+        <item>Tarjeta de identidad</item>
+    </string-array>
+
+
+    <string name="btnRepotarPerdido">Reportar como perdido</string>
+</resources>

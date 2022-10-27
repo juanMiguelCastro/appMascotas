@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vistas.VistaPrevia">
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre: ..............."
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edad: ..............."
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="106dp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dueño: ......................"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="264dp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Donde vivo? : ....................."
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="323dp" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Raza: ....................."
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="190dp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Especie: ......................"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="152dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="329dp"
+        android:layout_height="45dp"
+        android:text="Mas informacion"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="480dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="339dp"
+        android:layout_height="44dp"
+        android:text="Volver al inicio"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="543dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

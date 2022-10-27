@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vistas.editarMascota">
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Editar informacion mascota"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="33dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="168dp" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblEdad"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="168dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="230dp" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblEspecie"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="230dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="298dp" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblRaza"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="298dp" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="99dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="99dp" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="346dp"
+        android:layout_height="46dp"
+        android:text="Cancelar"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="541dp" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="174dp"
+        android:layout_height="38dp"
+        android:text="Ver vacunas"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="410dp" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="346dp"
+        android:layout_height="46dp"
+        android:text="Modificar"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="483dp" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="53dp"
+        android:layout_height="52dp"
+        android:text="+"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="353dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="vacunas"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="357dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
