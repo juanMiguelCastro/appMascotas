@@ -17,6 +17,7 @@
         android:layout_marginTop="288dp"
         android:background="@drawable/bordes_redondos"
         android:drawablePadding="20dp"
+        android:onClick="scan"
         android:padding="20dp"
         android:text="@string/btnScanear"
         android:textColor="#534425"
