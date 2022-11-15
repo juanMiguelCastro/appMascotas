@@ -1,8 +1,8 @@
 package co.edu.uniempresarial.appmascotas.vistas;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import co.edu.uniempresarial.appmascotas.R;
 

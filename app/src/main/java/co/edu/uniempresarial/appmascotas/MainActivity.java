@@ -12,6 +12,7 @@ import com.google.zxing.integration.android.IntentResult;
 
 import co.edu.uniempresarial.appmascotas.vistas.LocalizarMascota;
 import co.edu.uniempresarial.appmascotas.vistas.Login;
+import co.edu.uniempresarial.appmascotas.vistas.Registro;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,6 +33,10 @@ public class MainActivity extends AppCompatActivity {
         integrador.setBeepEnabled(true);
         integrador.setBarcodeImageEnabled(true);
         integrador.initiateScan();
+    }
+    public void btnRegistrar(View view){
+        Intent intento = new Intent(this, Registro.class);
+        startActivity(intento);
     }
     protected void onActivityResult(int requestCode,int resultCode, Intent data) {
         IntentResult result =IntentIntegrator.parseActivityResult(requestCode,resultCode,data);
