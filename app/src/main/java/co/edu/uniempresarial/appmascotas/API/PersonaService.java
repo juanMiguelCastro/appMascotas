@@ -1,6 +1,7 @@
 package co.edu.uniempresarial.appmascotas.API;
 
 import co.edu.uniempresarial.appmascotas.Modelo.Persona;
+import co.edu.uniempresarial.appmascotas.Modelo.RespLogin;
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.Field;
@@ -14,6 +15,6 @@ public interface PersonaService {
 
     @POST("persona/login.php")
     @FormUrlEncoded
-    Call<Boolean> getLogin(@Field("documentoId") String documentoId, @Field("pass") String pass);
+    Call<RespLogin> getLogin(@Field("documentoId") String documentoId, @Field("pass") String pass);
 
 }

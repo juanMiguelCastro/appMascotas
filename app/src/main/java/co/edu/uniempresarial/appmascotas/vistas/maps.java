@@ -75,7 +75,7 @@ public class maps extends AppCompatActivity implements OnMapReadyCallback, Googl
     public void btnRegistrar(View view){
         if(persona.getLatitud() != null && persona.getLongitud()!=null){
             ControlPersona ctrlPersona= new ControlPersona(persona);
-            ctrlPersona.registrar(this);
+            ctrlPersona.registrar(this, view);
         }
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);

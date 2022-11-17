@@ -8,6 +8,7 @@ import android.widget.EditText;
 import androidx.appcompat.app.AppCompatActivity;
 
 import co.edu.uniempresarial.appmascotas.MainActivity;
+import co.edu.uniempresarial.appmascotas.Modelo.Persona;
 import co.edu.uniempresarial.appmascotas.R;
 import co.edu.uniempresarial.appmascotas.control.ControlPersona;
 
@@ -25,7 +26,11 @@ public class Login extends AppCompatActivity {
         startActivity(intent);
     }
     public void btnEntrar(View view){
-        ControlPersona ctrlPersona= new ControlPersona(id.getText().toString(),pass.getText().toString());
-        ctrlPersona.Login(this);
+        Persona persona = new Persona();
+        //Toast.makeText(this, id.getText().toString(), Toast.LENGTH_SHORT).show();
+        persona.setDocumentoId(id.getText().toString());
+        persona.setPass(pass.getText().toString());
+        ControlPersona ctrlPersona= new ControlPersona(persona);
+        ctrlPersona.Login(this,view);
     }
 }
