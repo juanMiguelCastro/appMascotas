@@ -30,6 +30,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/lblMensaje"
+        android:layout_width="106dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="70dp"
+        android:text="No tiene mascotas registradas"
+        android:textSize="24sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/btnSalir"
         android:layout_width="wrap_content"
@@ -38,6 +50,7 @@
         android:layout_marginTop="29dp"
         android:layout_marginBottom="134dp"
         android:background="@drawable/ovalado"
+        android:onClick="btnRegistrar"
         android:text="Añadir mascota"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"

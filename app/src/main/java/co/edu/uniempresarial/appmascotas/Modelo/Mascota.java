@@ -2,7 +2,7 @@ package co.edu.uniempresarial.appmascotas.Modelo;
 
 public class Mascota {
     private int idMascota;
-    private String dueño;
+    private int dueño;
     private String nombre;
     private String especie;
     private String raza;
@@ -12,7 +12,7 @@ public class Mascota {
     private String tipoComida;
 
     public Mascota(){}
-    public Mascota(int idMascota, String dueño, String nombre, String especie, String raza, String estado, String longitud, String latitud, String tipoComida) {
+    public Mascota(int idMascota, int dueño, String nombre, String especie, String raza, String estado, String longitud, String latitud, String tipoComida) {
         this.idMascota = idMascota;
         this.dueño = dueño;
         this.nombre = nombre;
@@ -32,11 +32,11 @@ public class Mascota {
         this.idMascota = idMascota;
     }
 
-    public String getDueño() {
+    public int getDueño() {
         return dueño;
     }
 
-    public void setDueño(String dueño) {
+    public void setDueño(int dueño) {
         this.dueño = dueño;
     }
 

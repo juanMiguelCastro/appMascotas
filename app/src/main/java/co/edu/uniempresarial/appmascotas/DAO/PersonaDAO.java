@@ -23,6 +23,10 @@ public class PersonaDAO {
         this.view = view;
         this.manageDB = new ManageDB(context);
     }
+    public PersonaDAO(Context context) {
+        this.context = context;
+        this.manageDB = new ManageDB(context);
+    }
     public boolean insertUser(Persona myUser){
         boolean valInsert;
         try{
@@ -86,5 +90,16 @@ public class PersonaDAO {
         db.close();
         return userList;
     }
-
+    public int recuperarId(int id){
+        SQLiteDatabase db=manageDB.getReadableDatabase();
+        String query ="select idPersona from persona where documentoId="+id;
+        int idPersona=0;
+        Cursor cursor = db.rawQuery(query,null);
+        if(cursor.moveToFirst()){
+            idPersona=cursor.getInt(0);
+        }
+        cursor.close();
+        db.close();
+        return idPersona;
+    }
 }

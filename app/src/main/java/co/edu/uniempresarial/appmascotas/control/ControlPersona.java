@@ -19,7 +19,9 @@ public class ControlPersona {
     public ControlPersona(Persona persona){
         this.persona = persona;
     }
-
+    public ControlPersona(int id){
+        this.persona = persona;
+    }
     public void registrar(Context context, View view){
         PersonaDAO personaDAO = new PersonaDAO(context,view);
         boolean val = personaDAO.insertUser(persona);
@@ -60,6 +62,7 @@ public class ControlPersona {
         if(val){
             Toast.makeText(context, "Bienvenid@", Toast.LENGTH_LONG).show();
             Intent intent = new Intent(context, MisMascotas.class);
+            intent.putExtra("documentoId",persona.getDocumentoId());
             context.startActivity(intent);
         }else{
             Toast.makeText(context, "el numero de identificacion o contraseña son incorrectos", Toast.LENGTH_LONG).show();
