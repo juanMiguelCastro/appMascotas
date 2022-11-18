@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.view.View;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import co.edu.uniempresarial.appmascotas.DAO.MascotaDAO;
 import co.edu.uniempresarial.appmascotas.DAO.PersonaDAO;
@@ -29,13 +30,16 @@ public class controlMascota {
         persona = new Persona();
         persona.setDocumentoId(id);
     }
-    /*public listaMascotas(Mascota mascota){
+    public controlMascota(Mascota mascota, Context context) {
         this.mascota = mascota;
-    }*/
+        this.context=context;
+    }
+
 
 
     public void registrar(Context context) {
         PersonaDAO person = new PersonaDAO(context);
+        int idDueño=mascota.getDueño();
         int id=person.recuperarId(mascota.getDueño());
         mascota.setDueño(id);
         MascotaDAO mascotaDAO = new MascotaDAO(context,view);
@@ -43,7 +47,7 @@ public class controlMascota {
         boolean val = mascotaDAO.insertPet(mascota);
         if (val) {
             Intent intent = new Intent(context, MisMascotas.class);
-            intent.putExtra("documentoId",persona.getDocumentoId());
+            intent.putExtra("documentoId",idDueño);
             context.startActivity(intent);
         }
     }
@@ -52,5 +56,24 @@ public class controlMascota {
         ArrayList<Mascota> mascotas;
         mascotas = mascotaDAO.getMascotaList(persona.getDocumentoId());
         return mascotas;
+    }
+
+    public List<String> encontrarMascota(Context context, String id){
+        MascotaDAO mascotaDAO = new MascotaDAO(context,view);
+        List<String> mascota;
+        mascota = mascotaDAO.getMascotaInfo(id);
+        return mascota;
+    }
+    public boolean actualizarMascota(){
+        System.out.println("----------"+mascota.getIdMascota());
+        MascotaDAO mascotaDAO = new MascotaDAO(context,view);
+        boolean val= mascotaDAO.updatePet(mascota);
+        return val;
+    }
+    public boolean eliminarMascota(){
+        System.out.println("----------"+mascota.getIdMascota());
+        MascotaDAO mascotaDAO = new MascotaDAO(context,view);
+        boolean val= mascotaDAO.deletePet(mascota);
+        return val;
     }
 }

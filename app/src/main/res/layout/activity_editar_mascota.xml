@@ -4,124 +4,169 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/backgroun_image"
+    android:backgroundTint="#60C6FBFD"
+    android:backgroundTintMode="src_over"
     tools:context=".vistas.editarMascota">
 
     <TextView
         android:id="@+id/textView30"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="37dp"
         android:text="Editar informacion mascota"
-        tools:layout_editor_absoluteX="119dp"
-        tools:layout_editor_absoluteY="33dp" />
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName7"
+        android:id="@+id/txtEditEspecie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="25dp"
         android:ems="10"
+        android:hint="epecie"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="112dp"
-        tools:layout_editor_absoluteY="168dp" />
+        android:minHeight="48dp"
+        app:layout_constraintStart_toEndOf="@+id/textView35"
+        app:layout_constraintTop_toBottomOf="@+id/txtEditNombreMascota" />
 
     <TextView
         android:id="@+id/textView35"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/lblEdad"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="168dp" />
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/lblEspecie"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView32" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName10"
+        android:id="@+id/txtEditRaza"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="15dp"
         android:ems="10"
+        android:hint="raza"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="112dp"
-        tools:layout_editor_absoluteY="230dp" />
+        android:minHeight="48dp"
+        app:layout_constraintStart_toEndOf="@+id/textView34"
+        app:layout_constraintTop_toBottomOf="@+id/txtEditEspecie" />
 
     <TextView
         android:id="@+id/textView34"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/lblEspecie"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="230dp" />
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/lblRaza"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView35" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName9"
+        android:id="@+id/txtEditTipoComida"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="25dp"
         android:ems="10"
+        android:hint="tipo de comida"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="112dp"
-        tools:layout_editor_absoluteY="298dp" />
+        android:minHeight="48dp"
+        app:layout_constraintStart_toEndOf="@+id/textView33"
+        app:layout_constraintTop_toBottomOf="@+id/txtEditRaza" />
 
     <TextView
         android:id="@+id/textView33"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/lblRaza"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="298dp" />
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="47dp"
+        android:text="@string/lblTipoComida"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView34" />
 
     <TextView
         android:id="@+id/textView32"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="98dp"
         android:text="Nombre"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="99dp" />
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName8"
+        android:id="@+id/txtEditNombreMascota"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="34dp"
         android:ems="10"
+        android:hint="nombre"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="112dp"
-        tools:layout_editor_absoluteY="99dp" />
+        android:minHeight="48dp"
+        app:layout_constraintStart_toEndOf="@+id/textView32"
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/btnAtrasa"
         android:layout_width="346dp"
-        android:layout_height="46dp"
-        android:text="Cancelar"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="541dp" />
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/ovalado"
+        android:onClick="btnAtras"
+        android:text="Atras"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button7"
-        android:layout_width="174dp"
-        android:layout_height="38dp"
-        android:text="Ver vacunas"
-        tools:layout_editor_absoluteX="112dp"
-        tools:layout_editor_absoluteY="410dp" />
-
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="346dp"
-        android:layout_height="46dp"
-        android:text="Modificar"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="483dp" />
-
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="53dp"
+        android:id="@+id/btnModificar"
+        android:layout_width="154dp"
         android:layout_height="52dp"
-        android:text="+"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="353dp" />
+        android:layout_marginStart="22dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/ovalado"
+        android:onClick="btnEliminar"
+        android:text="ELIMINAR"
+        app:layout_constraintBottom_toTopOf="@+id/btnAtrasa"
+        app:layout_constraintStart_toEndOf="@+id/btnModificar3" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="vacunas"
-        tools:layout_editor_absoluteX="108dp"
-        tools:layout_editor_absoluteY="357dp" />
+    <Button
+        android:id="@+id/btnModificar3"
+        android:layout_width="154dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/ovalado"
+        android:onClick="btnModificar"
+        android:text="Modificar"
+        app:layout_constraintBottom_toTopOf="@+id/btnAtrasa"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnGenerarQR"
+        android:layout_width="346dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/ovalado"
+        android:onClick="btnGenerarQr"
+        android:text="Generar QR"
+        app:layout_constraintBottom_toTopOf="@+id/btnModificar"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

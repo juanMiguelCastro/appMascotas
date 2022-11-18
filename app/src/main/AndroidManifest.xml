@@ -16,6 +16,13 @@
         android:theme="@style/Theme.AppMascotas"
         tools:targetApi="31">
         <activity
+            android:name=".vistas.GenerarQR"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".vistas.maps"
             android:exported="false">
             <meta-data
@@ -36,13 +43,6 @@
         </activity>
         <activity
             android:name=".vistas.MisMascotas"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".vistas.fueVista"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

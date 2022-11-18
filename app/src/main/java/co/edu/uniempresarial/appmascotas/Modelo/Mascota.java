@@ -1,6 +1,8 @@
 package co.edu.uniempresarial.appmascotas.Modelo;
 
-public class Mascota {
+import java.io.Serializable;
+
+public class Mascota implements Serializable {
     private int idMascota;
     private int dueño;
     private String nombre;
@@ -98,16 +100,6 @@ public class Mascota {
 
     @Override
     public String toString() {
-        return "Mascota{" +
-                "idMascota=" + idMascota +
-                ", dueño='" + dueño + '\'' +
-                ", nombre='" + nombre + '\'' +
-                ", especie='" + especie + '\'' +
-                ", raza='" + raza + '\'' +
-                ", estado='" + estado + '\'' +
-                ", longitud='" + longitud + '\'' +
-                ", latitud='" + latitud + '\'' +
-                ", tipoComida='" + tipoComida + '\'' +
-                '}';
+        return especie +": "+nombre ;
     }
 }
